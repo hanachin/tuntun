@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @website_history.website %>
+</p>
+
+<p>
+  <strong>Success:</strong>
+  <%= @website_history.success %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @website_history.body %>
+</p>
+
+<%= link_to 'Edit', edit_website_history_path(@website_history) %> |
+<%= link_to 'Back', website_histories_path %>

@@ -1,0 +1,31 @@
+<h1>Listing website_histories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Website</th>
+      <th>Success</th>
+      <th>Body</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @website_histories.each do |website_history| %>
+      <tr>
+        <td><%= website_history.website %></td>
+        <td><%= website_history.success %></td>
+        <td><%= website_history.body %></td>
+        <td><%= link_to 'Show', website_history %></td>
+        <td><%= link_to 'Edit', edit_website_history_path(website_history) %></td>
+        <td><%= link_to 'Destroy', website_history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Website history', new_website_history_path %>
