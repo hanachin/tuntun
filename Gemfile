@@ -33,6 +33,17 @@ end
 # bower components
 gem 'rails-assets-angular'
 
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'turnip'
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_rewinder'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
