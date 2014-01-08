@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-source 'https://rails-assets.org'
 
 ruby '2.1.0'
 
@@ -31,9 +30,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-# bower components
-gem 'rails-assets-angular'
 
 group :development, :test do
   gem 'rspec-rails'
