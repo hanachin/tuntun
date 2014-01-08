@@ -40,6 +40,9 @@ end
 
 group :development do
   gem 'powder'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'terminal-notifier-guard'
 end
 
 group :test do
